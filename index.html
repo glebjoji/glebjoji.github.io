@@ -21,13 +21,10 @@
     <li><a href="papka1/papka2/4.html">Двумя уровнями выше текущего(аналогично)</a></li>
     <li> Здесь будет текст для <a href="1.html">контекстной</a> ссылки</li>
     <li><a href="https://ru.wikipedia.org/wiki/Кубанский_государственный_университет#Рейтинги">Ссылку на фрагмент страницы стороннего сайта</a></li>
-    <li>Ссылка в прямоугольной и круглой области <img src="cat2.jpg" alt="ogo" width="250" height="250"  usemap="#ogo">
-        <map name="ogo">
-            <area shape="circle" coords="100,220,73" href="https://youtu.be/gnzYZ_6RmgA?si=S_BL-namq4dIScEO" target="_blank" alt="нос">
-        </map>
-        <img src="cat3.jpg" alt="hehe" usemap="#hehe" width="250" height="250">
+    <li>Ссылка в прямоугольной и круглой области <img src="cat3.jpg" alt="hehe" usemap="#hehe" width="250" height="250">
         <map name="hehe">
-            <area shape="rect" coords="72,82,302,268" href="https://youtu.be/JkDieSJRdyc?si=paftNYiFB63QWfHo" target="_blank" alt="TACHILA">
+            <area shape="circle" coords="50,62,20" href="https://youtu.be/gnzYZ_6RmgA?si=S_BL-namq4dIScEO" target="_blank" alt="a">
+            <area shape="rect" coords="100,100,150,150" href="https://youtu.be/JkDieSJRdyc?si=paftNYiFB63QWfHo" target="_blank" alt="b">
         </map></li>
     <li><a href="#!">Ссылка с пустым href</a></li>
     <li><a>Ссылка без href</a></li>
@@ -40,29 +37,30 @@
     <li><a href="1.html" rel="noindex">Ссылка запрещенная для индексации поисковиками</a></li>
     <li><a href="ftp://login:password@http://example.com/main.html/download/image.jpg">Cсылка на файл с авторизацией</a></li>
 </ul>
-<a id="vniz"></a>
-<form method="post" action="/" class="forms">
+
+<form method="post" action="./index.html" class="forms">
     <label>
         <br />
-        <input placeholder="ФИО" />
+        <input placeholder="ФИО" required/>
     </label><br />
     <label>
-        <input type="tel" placeholder="Телефон" />
+        <input type="tel" placeholder="Телефон" required />
     </label><br />
     <label>
-        <input type="email" placeholder="e-mail" />
+        <input type="email" placeholder="e-mail" required/>
     </label><br />
     <label>
         Дата рождения <br/>
-        <input type="date" />
+        <input type="date" required/>
     </label><br />
     <label>
-        <input name=sex type="radio" value="male" />
+        <input name=sex type="radio" value="male" required/>
         Мужской</label>
     <label>
-        <input name=sex type="radio" value="female" />
+        <input name=sex type="radio" value="female" required />
         Женский</label> <br />
     <label>
+        <a id="form"></a>
         <br />
         <select>
             <option disabled>Любимый язык программирования</option>
@@ -85,9 +83,10 @@
     </label><br />
     <label>
         С контрактом ознакомился
-        <input type="checkbox">
+        <input type="checkbox" required>
     </label><br />
     <input type="submit" value="Отправить" />
 </form>
+    <a id="vniz"></a>
 </body>
 </html>
